@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body {
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.row {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.btn-secondary {
+    background-color: rgb(72, 72, 245);
+    border: blue;
+}
+
+.btn-secondary:hover {
+    background-color: blue;
+    border: blue;
+}
+
+#events-container {
+    padding: 50px;
+}
+
+#events-container h2 {
+    margin-bottom: 10px;
+}
+
+#events-container .subtitle {
+    color: rgb(85, 84, 84);
+}
+
+#card-container {
+    display: flex;
+}
+
+.card-title-city {
+    font-size: 15px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+#events-container .card{
+    flex: 1 1 0;
+    max-width: 20%;
+    border-radius: 10px;
+    padding: 0;
+    margin: 5px;
+}
+
+#events-container img {
+    max-height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#event-create-container {
+    padding: 50px;
+}
+
+footer {
+    color: white;
+    background-color: rgb(24, 24, 95);
+    padding: 23px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    height: 7%;
+}
+
+footer p {
+    text-align: center;
+}
