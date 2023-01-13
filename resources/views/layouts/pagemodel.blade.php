@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <title>@yield('title', 'Dextor')</title>
     </head>
     <body>
@@ -29,12 +30,9 @@
                 </div>
             </div>
         </nav>
+        @if(session('msg'))
+            <p class="msg"><ion-icon name="information-circle-outline" class="information-icon"></ion-icon>{{ session('msg') }}</p>
+        @endif
         @yield('content')
-        <div>
-            <footer>
-                <p>Davi dos Reis &copy; 2022</p>
-            </footer>
-        </div>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     </body>
 </html>
