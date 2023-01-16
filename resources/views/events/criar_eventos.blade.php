@@ -15,6 +15,10 @@
                     <input type="text" class="form-control" name="Description" placeholder="Descreva o evento">
                 </div>
                 <div class="form-group">
+                    <label for="Date">Data do vento: </label>
+                    <input type="date" class="form-control" name="Date">
+                </div>
+                <div class="form-group">
                     <label for="City">Cidade</label>
                     <input type="text" class="form-control" name="City" placeholder="Insira onde ocorrerá o evento">
                 </div>

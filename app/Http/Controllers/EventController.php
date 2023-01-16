@@ -27,6 +27,7 @@ class EventController extends Controller
         $event->Description = $request->Description;
         $event->City = $request->City;
         $event->Private = $request->Private;
+        $event->Date = $request->Date;
 
         $event->save();
 
@@ -41,4 +42,17 @@ class EventController extends Controller
         return view('events.show', ['event' => $event]);
 
     }
+
+    public function subscribe($id) {
+
+        $event = Event::findOrFail($id);
+
+        $event->Participants += 1;
+
+        $event->save();
+
+        return redirect('/');
+
+    }
+
 }

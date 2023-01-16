@@ -12,9 +12,9 @@
             <div id="details-container" class="col-md-6">
                 <h1>{{ $event->Name }}</h1>
                 <p class="event-city"><ion-icon name="location-outline"></ion-icon>{{ $event->City }}</p>
-                <p><ion-icon name="people-outline"></ion-icon>x Pessoas</p>
+                <p><ion-icon name="people-outline"></ion-icon>{{ $event->Participants }} Pessoas</p>
                 <p class="event-theme"><ion-icon name="megaphone-outline"></ion-icon> Tema do evento</p>
-                <a href="#" class="btn btn-secondary">Inscrever-se</a>
+                <a href="/events/subscribe/{{ $event->id }}" class="btn btn-secondary">Inscrever-se</a>
             </div>
         </div>
     </div>

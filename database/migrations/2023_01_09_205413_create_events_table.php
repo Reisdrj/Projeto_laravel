@@ -20,6 +20,8 @@ return new class extends Migration
             $table->text('Description');
             $table->string('City');
             $table->boolean('Private');
+            $table->datetime('Date');
+            $table->integer('Participants')->default(0);
         });
     }
 
